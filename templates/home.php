@@ -39,9 +39,9 @@
                 </div>
                 
                 <div class="columna">
-                    <h2>Acerca de mi</h2>
+                    <h2 class="big-white">Acerca de mi</h2>
                     <p>Hola</p>
-                    <h3>Soy Clauss</h3>
+                    <h3 class="special-white-big">Soy Clauss</h3>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>../img/coaching/rombos....png" alt="<>........<>">
                     <p>engo más de 35 años en el campo del acondicionamiento físico, los últimos años me he también especializado en áreas del bienestar, la prevención y la madurez funcional y autónoma.
                     </p>
@@ -55,7 +55,7 @@
     
     <section id="clientes" class="template-section">
         <div class="contenedor">
-            <h2>Mis clientes
+            <h2 class="big-green">Mis clientes
            <span class="special-green"> ¡Lo confirman!</span></h2>
             <div class="flex">
                 <div class="columna-cliente">
@@ -84,7 +84,7 @@
 
    <section id="ebooks" class="template-section">
        <div class="contenedor">
-               <div class="title-div"><h2>
+               <div class="title-div"><h2 class="big-green">
                    Mis Ebooks
                    <span class="special-green"> y Videos </span></h2>
                </div>
@@ -191,7 +191,7 @@
            <div class="flex">
               <div class="columna">
                 <h2 class="green">COACHING</h2>
-                <p>en cambio de
+                <p class="big-green">en cambio de
                 <span class="special-green">Hábitos</span></p>
                 <img src="../img/home/jugoVerde.png" alt="Jugo saludable">
               </div>
@@ -199,7 +199,7 @@
                   <p class="white">Crearé un programa  <b>totalmente personalizado,</b> basado en tus objetivos, tiempo, recursos, preferencias, gustos y limitantes.</p>
                   <p>Es un proceso de acompañamiento personalizado en el camino de modificar diversos patrones de conducta  que tienen que ver con la salud integral, con el objetivo de adoptar gradualmente hábitos más positivos y saludables para la vida. 
                   </p>
-                  <p class="special-white">¡Mejora tu calidad de vida y logra bienestar integral!</p>
+                  <p class="special-white-small">¡Mejora tu calidad de vida y logra bienestar integral!</p>
                   <div class="flex">
                       <div class="columna">
                           <img src="../img/home/circulo-punteado-amarillo.png" alt="circulo amarillo">
@@ -214,6 +214,34 @@
            <div class="flex"></div>
        </div>
    </section>
+   
+   <section id="entrenamiento">
+       <div class="contenedor">
+           <div class="flex">
+               <div class="col-small">
+                   <h2>ENTRENAMIENTO</h2>
+                   <p class="big-green">deportivo en</p>
+                   <p class="green">acondicionamiento</p>
+                   <p class="special-green">[Físico para la vida]</p>
+               </div>
+               <div id="miss-pesa" class="col-big">
+                   
+               </div>
+           </div>
+           <div>
+               <p>Diseñaré para ti un programa de entrenamiento personalizado que puedas realizar en casa. Tomando en cuenta tus objetivos, tiempo, recursos y limitantes.
+               </p>
+               <p>Te ayudaré a conservar y recuperar gradualmente cualidades físicas como <span class="green"><b>la fuerza, la flexibilidad y la resistencia</b></span>, entre otras, vitales para garantizar tu funcionalidad y autonomía óptima, mejorando tu calidad de vida. </p>
+               <p class="special-green-small">Mejora estado físico, desde tu casa y a tu ritmo! </p>
+               <button class="btn-gold">¡ME INTERESA!</button>
+           </div>
+       </div>
+   </section>
+   
+   <section id="contacto">
+       <div class="contenedor"></div>
+   </section>
+       
    
     <?php 
     get_footer();

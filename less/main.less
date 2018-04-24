@@ -1,17 +1,462 @@
-@verde-fuerte-letras: #4e8b3a;
-@verde-tenue-letras: #a7c36a;
-@gold: #e5b545;
-@gris-ebook: #595959;
-@semi-blanco: #f1f5f9;
-@contenedor-verde-libros: #cae291;
+@import "variables";
 
-//ABOUT
+.container {
+    width: 100%;
+}
 
-@verde-salud: #5e9543
-@verde-resp:   #72a93d
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.texto-blanco {
+    color: #fff;
+}
+
+.template-section {
+    p,
+    a,
+    ul,
+    li,
+    span {
+        font-family: 'Gotham';
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+
+.padding-50 {
+    padding: 50px 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .columna {
+        width: 50%;
+        padding: 0px 20px;
+        box-sizing: border-box;
+        &.align-self-end {
+            align-self: flex-end;
+        }
+    }
+}
+
+.boton {
+    transition: all 0.3s ease-in-out;
+
+    &.blanco-transparente {
+        background: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        display: inline-block;
+        padding: 10px 18px;
+        font-weight: 500;
+        &:hover {
+            background: @verde-tenue;
+        }
+    }
+
+    &.naranja {
+        background: @naranja;
+        color: #fff;
+        display: inline-block;
+        padding: 18px;
+        font-weight: 500;
+        &:hover {
+            background: @verde;
+        }
+    }
+
+    &.naranja-dos {
+        background: @naranja;
+        color: #fff;
+        display: inline-block;
+        padding: 18px;
+        font-weight: 500;
+        &:hover {
+            background: @amarillo;
+        }
+    }
+
+    &.verde {
+        background: @verde;
+        color: #fff;
+        display: inline-block;
+        padding: 18px;
+        font-weight: 500;
+        &:hover {
+            background: @amarillo;
+            color: @verde;
+        }
+    }
+}
+
+/*----------------------------------------*/
+
+/* PRINCIPAL -----------------------------*/
+
+/*----------------------------------------*/
+
+#about-home {
+    background: url(../img/home/fondo-about.jpg) no-repeat center;
+    background-color: @verde;
+    text-align: center;
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+        font-size: 2em;
+    }
+
+    h3 {
+        color: #fff;
+        font-family: 'Daydreamer';
+        text-align: center;
+        font-size: 6em;
+        font-weight: lighter;
+        line-height: 0.6em;
+        span {
+            color: @verde-tenue-letras;
+            font-weight: 500;
+            display: block;
+            font-size: 0.5em;
+        }
+    }
+
+    .boton {
+        margin: 0 auto;
+    }
+}
+
+#mis-clientes {
+    background: @fondoGris;
+    .contenedor {
+        position: relative;
+    }
+    h2 {
+        text-align: center;
+        color: @verde;
+        font-size: 3em;
+        font-weight: 300;
+        span {
+            display: block;
+            font-family: 'Daydreamer';
+            font-size: 2em;
+        }
+    }
+
+    .testimonio {
+        flex-wrap: nowrap;
+        .columna {
+            width: auto;
+            &:last-child {
+                max-width: 600px;
+            }
+
+            text-align: justify;
+
+            p {
+                font-size: 18px;
+            }
+
+            .autor {
+                color: @verde;
+                font-weight: 500;
+                padding: 0;
+                margin: 0;
+            }
+
+            .puesto {
+                color: #000;
+                font-weight: 500;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.fondo-figura {
+    background: url(../img/home/figura.png) no-repeat 80px 92px;
+    background-size: cover;
+    min-height: 1600px;
+    position: absolute;
+    width: 100%;
+}
+
+#ebooks-home {
+    background: @verdeSuave;
+    color: #fff;
+    .contenedor {
+        position: relative;
+    }
+
+    h2 {
+        color: @verde;
+        font-size: 3em;
+        font-weight: 400;
+        line-height: 1.6em;
+
+        span {
+            font-family: 'Daydreamer';
+            font-size: 2.5em;
+            display: block;
+            padding-left: 0;
+        }
+
+    }
+
+    .flex {
+        max-width: 800px;
+        margin-top: 50px;
+    }
+
+    h3 {
+        color: #fff;
+    }
+
+    h4 {
+        color: #fff;
+        font-family: 'Daydreamer';
+        font-size: 2.8em;
+        font-weight: 300;
+    }
+
+    p {
+        text-align: justify;
+        font-weight: 500;
+    }
+}
+
+
+#suscribirme {
+    background-color: @fondoGris2;
+
+    .flex {
+        min-height: 622px;
+        background: url(../img/home/suscribete.jpg) no-repeat;
+        align-items: center;
+        .columna {
+            h2 {
+                color: @gris-texto;
+            }
+
+            p {
+                &.green {
+                    color: @verde;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+}
+
+#videos-home {
+    background: @naranja;
+
+    h2 {
+        color: #fff;
+        font-size: 2.5em;
+        span {
+            display: block;
+            color: @verde;
+            font-weight: 500;
+            font-size: 1.5em;
+        }
+    }
+
+    p {
+        color: #fff;
+        text-align: justify;
+    }
+
+    img.videos {
+        margin-top: -123px;
+    }
+}
+
+
+#coaching-home {
+    background: url(../img/home/fondo-coach.jpg) repeat center;
+    color: #fff;
+
+    h2 {
+        color: @verde;
+        font-size: 4em;
+        font-weight: 700;
+        span {
+            display: block;
+            font-size: 1em;
+        }
+        b {
+            display: block;
+            font-family: 'Daydreamer';
+            font-size: 1.9em;
+        }
+    }
+
+    .flex {
+        min-height: 800px;
+        .columna {
+            padding: 50px 0;
+            &:first-child {
+                background: #fff;
+                width: 40%;
+            }
+            &:last-child {
+                background: @verde;
+                width: 60%;
+                padding: 50px 50px;
+            }
+        }
+    }
+
+    p {
+        text-align: justify;
+
+        b {
+            font-weight: 400;
+        }
+    }
+
+    img {
+        position: relative;
+        left: 267px;
+        width: 330px;
+        top: 96px;
+    }
+
+    a.boton {
+        float: right;
+    }
+
+    .cursiva {
+        font-family: 'Daydreamer';
+        font-size: 2.3em;
+    }
+}
+
+#entrenamiento-home {
+    background: url(../img/home/miss-pesa.jpg) no-repeat center;
+    h2 {
+        color: @verde;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 700;
+        span {
+            display: block;
+            font-size: 1.4em;
+            &.acondicionamiento {
+                font-size: 0.95em;
+            }
+            &.cursiva {
+                font-family: 'Daydreamer';
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .flex {
+        min-height: 800px;
+        .columna {
+            padding: 50px 0;
+            &:first-child {
+                background: #fff;
+                width: 40%;
+            }
+            &:last-child {
+                width: 60%;
+            }
+        }
+    }
+
+    .info {
+        background: #fff;
+        position: relative;
+        width: 690px;
+        padding: 50px;
+        text-align: justify;
+        b {
+            font-weight: 500;
+            color: @verde;
+        }
+        p.cursiva {
+            color: @verde;
+            font-family: 'Daydreamer';
+            font-size: 2em;
+        }
+    }
+
+}
+
+#contacto {
+    background: url(../img/home/contacto.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    form {
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 20px;
+            &::placeholder{
+                color: #fff;
+            }
+            
+            &:focus{
+                border-color: @amarillo;
+            }
+        }
+        
+        .boton{
+            background: none;
+            color: #fff;
+            font-family: 'Daydreamer';
+            font-size: 4em;
+            text-transform: capitalize;
+            float: right;
+            
+            &:hover{
+                color: @amarillo;
+            }
+        }
+    }
     
-//Coaching
-
-@amarillo :#ffe508;
-@gris: #e7e7e7;
-@verde-tenue: #a6c269;
+    a.email{
+        color: #fff;
+        display: block;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    
+    .redes{
+        margin-top: 20px;
+        h3{
+            color: #fff;
+            font-weight: 500;
+        }
+        
+        img{
+            margin-right: 10px;
+        }
+    }
+}

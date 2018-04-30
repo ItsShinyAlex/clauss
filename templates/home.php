@@ -3,33 +3,9 @@
     get_header();
 ?>
 
-    <!--        <section id="deliciosas" class="template-section">
-            <div class="flex">
-                <div class="columna">
-                    <h1>Deliciosas
-                    y Saludables</h1>
-
-                    <h2>Recetas con camote</h2>
-
-                    <p>El camote es genial, se pueda utilizar en un sinfín de recetas prácticas, saludables y sabrosas. </p>
-                    <p>Este <span class="ebook">eBook</span> es mi <span class="verde-fuerte">regalo para ti</span> que quieres agregar más alimentos buenos a tu día. Podrás preparar recetas saladas, dulces, líquidas y sólidas.  </p>
-                    <div class="flex">
-                        <div class="columna">
-                            <p class="verde-fuerte">¡Disfrútalas Ya!</p>
-                        </div>
-                        <div class="columna">
-                            <button class="btn-green">¡DESCARGA GRATIS!</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="columna">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>../img/home/camotes.png" alt="camotes">
-                </div>
-                <div class="columna">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>../img/home/transparente-verde.png" alt="hojas">
-                </div>
-            </div>
-        </section>-->
+    <section id="intro">
+        <?php echo do_shortcode('[rev_slider alias="principal"]'); ?>
+    </section>
 
     <section id="about-home" class="template-section padding-50">
         <div class="contenedor">
@@ -233,7 +209,7 @@
         </div>
     </section>
 
- 
+
 
     <?php 
     get_footer();

@@ -19,7 +19,9 @@ function woodmart_child_enqueue_styles() {
 	} else {
 		wp_enqueue_style( 'woodmart-style', get_template_directory_uri() . '/style.css', array('bootstrap'), $version );
 	}
-
+    
+    wp_enqueue_style( 'bulma', get_stylesheet_directory_uri() . '/css/bulma.min.css', array('bootstrap'), $version );
+    
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('bootstrap'), $version );
     
 }

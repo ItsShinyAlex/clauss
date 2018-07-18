@@ -162,6 +162,55 @@
   padding: 10px;
   border-color: #008c2f;
 }
+#slide-1.slide-1 h1 {
+  font-size: 2.95em !important;
+}
+#slide-1.slide-1 h1 .gotham {
+  color: #f5b637;
+  font-size: 1.3em !important;
+  font-family: 'Gotham';
+  font-weight: 600;
+}
+#slide-1.slide-2 h1 {
+  font-size: 3.2em;
+}
+#slide-1.slide-2 h1 span.gotham {
+  font-weight: 300 !imporntat;
+  font-family: 'Gotham';
+  display: block;
+  font-size: 0.8em;
+}
+#slide-1.slide-4 h1 {
+  font-size: 3.2em;
+  line-height: 0.9em;
+}
+#slide-1.slide-4 h1 span.gotham-light {
+  font-weight: 300 !imporntat;
+  font-family: 'Gotham';
+  display: block;
+  font-size: 0.6em;
+}
+#slide-1.slide-4 h1 span.gotham {
+  font-weight: 300 !imporntat;
+  font-family: 'Gotham';
+  font-weight: bold;
+  display: block;
+  font-size: 0.7em;
+}
+#slide-1.slide-4 .precio small {
+  color: #ff8718;
+}
+#slide-1.slide-4 .precio p {
+  font-size: 2em;
+  color: #ff8718;
+  font-family: 'Gotham';
+  font-weight: bold;
+}
+#slide-1.slide-4 .precio b {
+  font-family: 'Gotham';
+  font-weight: bold;
+  color: #ff8718;
+}
 #about-home {
   background: url(../img/home/fondo-about.jpg) no-repeat center;
   background-color: #008c2f;
@@ -263,9 +312,6 @@
   margin-top: 50px;
 }
 #ebooks-home h3 {
-  color: #fff;
-}
-#ebooks-home h4 {
   color: #fff;
   font-family: 'Daydreamer';
   font-size: 2.8em;
@@ -536,6 +582,11 @@
   display: block;
   text-align-last: center;
 }
+#vision .vision,
+#coaching-for-all .vision {
+  position: relative;
+  left: -150px;
+}
 #valores,
 #costos {
   background: #a6c269;
@@ -581,6 +632,12 @@
   max-width: 300px;
   margin: 20px auto;
   min-height: 380px;
+  transition: all 0.3s ease-in-out;
+}
+#valores .valor:hover,
+#costos .valor:hover {
+  transform: translateY(-10px);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
 #valores .valor img,
 #costos .valor img,
@@ -604,7 +661,7 @@
   background: url(../img/coaching/slide-1.jpg) no-repeat center;
   position: relative;
   min-height: 650px;
-  margin-top: 140px;
+  margin-top: 200px;
 }
 #intro-coaching object {
   position: absolute;

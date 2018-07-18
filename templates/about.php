@@ -28,11 +28,13 @@ Soy actualmente Coach en Cambio de Hábitos, Terapista Antienvejecimiento y Tuto
         <div class="contenedor">
             <div class="columns is-mobile">
                 <div class="column is-5 is-offset-8">
-                    <h2 class="title has-text-centered">Mi Visión</h2>
-                    <div class="texto">
-                        <p class="has-text-justified">
-                            Guiar a las mujeres para que tengan una juventud más sana, se mantengan más bellas y en consecuencia logren una vejez plena, feliz, funcional y autónoma. Dedicándose tiempo a sí mismas y procurándose bienestar desde hoy, sin descuidar su hogar, familia, trabajo y estudios.
-                        </p>
+                    <div class="vision">
+                        <h2 class="title has-text-centered">Mi Visión</h2>
+                        <div class="texto">
+                            <p class="has-text-justified">
+                                Guiar a las mujeres para que tengan una juventud más sana, se mantengan más bellas y en consecuencia logren una vejez plena, feliz, funcional y autónoma. Dedicándose tiempo a sí mismas y procurándose bienestar desde hoy, sin descuidar su hogar, familia, trabajo y estudios.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

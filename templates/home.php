@@ -72,22 +72,21 @@
         <div class="contenedor">
             <div class="title">
                 <h2 class="big-green">
-                    Mis Ebooks
-                    <span class="special-green"> y Videos </span></h2>
+                   Mi
+                    <span class="special-green"> Blog </span></h2>
             </div>
 
             <div class="flex">
                 <div class="columna">
                     <div class="green-container">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/ebook-1.jpg" alt="COMIENZA A BRILLAR">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/habitos.png" alt="COMIENZA A BRILLAR">
                     </div>
                 </div>
 
                 <div class="columna">
-                    <h3 class="white"><b>Ebook</b></h3>
-                    <h4 class="special-white">Hábitos Saludables</h4>
+                    <h3 class="special-white">Hábitos Saludables</h3>
                     <p class="small"><b>Son guías que te orientarán en la mejora de tus patrones diarios (hábitos) en afán de mejorar tu calidad de vida, prevenir padecimientos crónicos y retrasar el envejecimiento prematuro.</b></p>
-                    <a class="boton naranja">¡ME INTERESA!</a>
+                    <a href="/categoria/habitos-saludables/" class="boton naranja">VER MÁS</a>
                 </div>
             </div>
 
@@ -97,16 +96,15 @@
             <div class="flex">
 
                 <div class="columna">
-                    <h3 class="white"><b>Ebook</b></h3>
-                    <h4 class="special-white">Cocina Saludable</h4>
+                    <h3 class="special-white">Cocina Saludable</h3>
                     <p class="small"><b>Son guías que te ayudarán a organizarte para cocinar sencillo, saludable y delicioso.</b></p>
-                    <a class="boton naranja">¡ME INTERESA!</a>
+                    <a href="/categoria/cocina-saludable/" class="boton naranja">VER MÁS</a>
                 </div>
 
 
                 <div class="columna">
                     <div class="green-container">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/ebook-1.jpg" alt="COMIENZA A BRILLAR">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/cocina.png" alt="COMIENZA A BRILLAR">
                     </div>
                 </div>
             </div>
@@ -116,14 +114,13 @@
             <div class="flex">
                 <div class="columna">
                     <div class="green-container">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/ebook-1.jpg" alt="COMIENZA A BRILLAR">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/movimientos.png" alt="COMIENZA A BRILLAR">
                     </div>
                 </div>
                 <div class="columna">
-                    <h3 class="white"><b>Ebook</b></h3>
-                    <h4 class="special-white">Movimientos Saludables</h4>
+                    <h3 class="special-white">Movimientos Saludables</h3>
                     <p class="small"><b>Son guías de apoyo para que te mantengas funcional, recuperes y conserves las cualidades físicas básicas para la vida, además de verte y sentirte muy bien.</b></p>
-                    <a class="boton naranja">¡ME INTERESA!</a>
+                    <a href="/categoria/movimientos-saludables/" class="boton naranja">VER MÁS</a>
                 </div>
 
             </div>

@@ -136,11 +136,14 @@
 /*Slides*/
 
 #slide-1 {
+
+
     h1 {
         color: @verde;
         font-family: 'Daydreamer';
         font-weight: 300;
         font-size: 4.2em;
+
     }
 
     h2 {
@@ -175,6 +178,74 @@
         &.border {
             padding: 10px;
             border-color: @verde;
+        }
+    }
+
+    &.slide-1 {
+        h1 {
+            font-size: 2.95em !important;
+            .gotham {
+                color: @naranja;
+                font-size: 1.3em !important;
+                font-family: 'Gotham';
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    &.slide-2 {
+        h1 {
+            font-size: 3.2em;
+            span.gotham {
+                font-weight: 300 !imporntat;
+                font-family: 'Gotham';
+                display: block;
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    &.slide-4 {
+        h1 {
+            font-size: 3.2em;
+            line-height: 0.9em;
+            span.gotham-light {
+                font-weight: 300 !imporntat;
+                font-family: 'Gotham';
+                display: block;
+                font-size: 0.6em;
+            }
+
+            span.gotham {
+                font-weight: 300 !imporntat;
+                font-family: 'Gotham';
+                font-weight: bold;
+                display: block;
+                font-size: 0.7em;
+            }
+        }
+
+        @anaranjado: #ff8718;
+        .precio {
+
+            small {
+                color: @anaranjado;
+            }
+
+            p {
+                font-size: 2em;
+                color: @anaranjado;
+                font-family: 'Gotham';
+                font-weight: bold;
+            }
+
+            b {
+                font-family: 'Gotham';
+                font-weight: bold;
+                color: @anaranjado;
+            }
+
         }
     }
 }
@@ -294,10 +365,6 @@
     }
 
     h3 {
-        color: #fff;
-    }
-
-    h4 {
         color: #fff;
         font-family: 'Daydreamer';
         font-size: 2.8em;
@@ -608,6 +675,11 @@
         display: block;
         text-align-last: center;
     }
+
+    .vision {
+        position: relative;
+        left: -150px;
+    }
 }
 
 #valores,
@@ -654,6 +726,11 @@
         max-width: 300px;
         margin: 20px auto;
         min-height: 380px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+        }
         img,
         object {
             display: block;
@@ -679,7 +756,7 @@
     background: url(../img/coaching/slide-1.jpg) no-repeat center;
     position: relative;
     min-height: 650px;
-    margin-top: 140px;
+    margin-top: 200px;
     object {
         position: absolute;
         bottom: 20px;

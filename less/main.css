@@ -32,8 +32,24 @@
   padding: 0 30px;
   box-sizing: border-box;
 }
-.texto-blanco {
+.texto-blanco,
+.white {
   color: #fff;
+}
+.gold {
+  color: #fcbd2a;
+}
+.grass {
+  color: #9bc464;
+}
+.b {
+  font-weight: 600 !important;
+}
+.dd {
+  font-family: 'Daydreamer' !important;
+}
+.m {
+  font-size: 52px !important;
 }
 .template-section p,
 .template-section a,
@@ -765,4 +781,94 @@
 }
 #costos p.nota {
   font-size: 1.5em;
+}
+/*----------------------------------------*/
+/* Train     -----------------------------*/
+/*----------------------------------------*/
+#entrenamiento {
+  min-height: 500px;
+  background: url(../img/train/slider1mujerPesa.jpg) center no-repeat;
+  background-size: cover;
+}
+#entrenamiento .flex {
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+}
+#entrenamiento h1 {
+  margin-top: 40px;
+  margin-left: 35px;
+}
+#entrenamiento h1 span {
+  font-size: 36px;
+}
+#mejora {
+  background: #fcbd2a;
+  padding: 100px 0;
+}
+#mejora .center {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 61%;
+}
+#mejora h2 {
+  text-align: center;
+  color: #008c2f;
+  font-family: 'Daydreamer';
+  font-size: 3.9em;
+  font-weight: 300;
+  font-size: 40px;
+}
+#mejora .divider {
+  padding-top: 30px;
+  margin: 0 auto;
+  display: block;
+}
+#mejora p {
+  padding-top: 25px;
+  max-width: 70%;
+  text-align-last: center;
+  margin: 0 auto;
+}
+#mejora b {
+  font-weight: 600 !important;
+  color: #008c2f;
+}
+#leave-triple {
+  background: url(../img/train/adorno-planta.png) center top no-repeat;
+  background-size: cover;
+  min-height: 888px;
+  position: absolute;
+  width: 100%;
+}
+#creare {
+  background-color: #9bc463;
+}
+#creare .center {
+  text-align: center;
+}
+#combinando {
+  min-height: 600px;
+  padding: 0px 20px;
+  background: url(../img/train/womanBALL.jpg) center no-repeat;
+  background-size: cover;
+}
+#combinando .columna {
+  width: 36%;
+}
+#combinando .center {
+  text-align: justify;
+  text-align-last: center;
+}
+#combinando .white {
+  font-size: 14px;
+}
+#combinando .pad-top {
+  padding-top: 15px;
+}
+#combinando #sqrt {
+  margin-left: 120px;
+  background: url(../img/train/green-back-square.png) center no-repeat;
+  background-size: cover;
+  padding: 30px;
 }

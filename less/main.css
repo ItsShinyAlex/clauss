@@ -18,6 +18,12 @@
   font-style: normal;
 }
 .container {
+  max-width: 2000px;
+}
+.content-layout-wrapper {
+  display: block !important;
+}
+.container {
   width: 100%;
 }
 .wrapper-full-width-content header .container {
@@ -375,55 +381,68 @@
 #videos-home img.videos {
   margin-top: -123px;
 }
-#coaching-home {
+#coaching-home,
+coaching-homemov {
   background: url(../img/home/fondo-coach.jpg) repeat center;
   color: #fff;
 }
-#coaching-home h2 {
+#coaching-home h2,
+coaching-homemov h2 {
   color: #008c2f;
   font-size: 3.5em;
   font-weight: 700;
 }
-#coaching-home h2 span {
+#coaching-home h2 span,
+coaching-homemov h2 span {
   display: block;
   font-size: 1em;
 }
-#coaching-home h2 b {
+#coaching-home h2 b,
+coaching-homemov h2 b {
   display: block;
   font-family: 'Daydreamer';
   font-size: 1.9em;
 }
-#coaching-home .flex {
+#coaching-home .flex,
+coaching-homemov .flex {
   min-height: 800px;
 }
-#coaching-home .flex .columna {
+#coaching-home .flex .columna,
+coaching-homemov .flex .columna {
   padding: 50px 0;
 }
-#coaching-home .flex .columna:first-child {
+#coaching-home .flex .columna:first-child,
+coaching-homemov .flex .columna:first-child {
   background: #fff;
   width: 40%;
 }
-#coaching-home .flex .columna:last-child {
+#coaching-home .flex .columna:last-child,
+coaching-homemov .flex .columna:last-child {
   background: #008c2f;
   width: 60%;
   padding: 50px 50px;
 }
-#coaching-home p {
+#coaching-home p,
+coaching-homemov p {
   text-align: justify;
 }
-#coaching-home p b {
+#coaching-home p b,
+coaching-homemov p b {
   font-weight: 400;
 }
-#coaching-home img {
+#coaching-home img,
+coaching-homemov img {
   position: relative;
   left: 267px;
   width: 330px;
   top: 96px;
 }
-#coaching-home a.boton {
+#coaching-home a.boton,
+coaching-homemov a.boton {
   float: right;
 }
-#coaching-home .cursiva {
+#coaching-home .cursiva,
+coaching-homemov .cursiva {
   font-family: 'Daydreamer';
   font-size: 2.3em;
   margin-top: 15px;
@@ -871,4 +890,278 @@
   background: url(../img/train/green-back-square.png) center no-repeat;
   background-size: cover;
   padding: 30px;
+}
+@media screen and (min-width: 650px) {
+  .deshide {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .flex .columna {
+    width: 100%;
+  }
+  .movhid {
+    display: none !important;
+  }
+  #about-home {
+    background: url(../img/home/res-quiensoy.jpg) center no-repeat;
+    background-color: #008c2f;
+    text-align: center;
+  }
+  #about-home .contenedor {
+    padding: 0;
+  }
+  #about-home p {
+    padding: 0 8%;
+  }
+  #about-home h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2em;
+    padding-bottom: 20px;
+  }
+  #about-home img {
+    margin: 20px 0;
+  }
+  #about-home h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 4.3em;
+    font-weight: lighter;
+    line-height: 0.6em;
+  }
+  #about-home h3 span {
+    color: #9bc464;
+    font-weight: 500;
+    display: block;
+    font-size: 0.5em;
+  }
+  #about-home .boton {
+    margin: 0 auto;
+  }
+  #mis-clientes {
+    background: #e0dede;
+  }
+  #mis-clientes .contenedor {
+    position: inherit;
+  }
+  #mis-clientes .flex .columna {
+    width: 100%;
+    padding: 0;
+  }
+  #mis-clientes .flex .columna img {
+    padding-bottom: 20px;
+  }
+  #mis-clientes h2 {
+    font-size: 2.1em;
+    padding-bottom: 20px;
+  }
+  #mis-clientes h2 span {
+    font-size: 1.3em;
+  }
+  #mis-clientes .testimonio {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #mis-clientes .testimonio .columna {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #mis-clientes .testimonio .columna:last-child {
+    max-width: 650px;
+  }
+  #mis-clientes .testimonio .columna p {
+    font-size: 21px;
+    text-align: center;
+  }
+  #mis-clientes .testimonio .columna .autor {
+    text-align: center;
+  }
+  #mis-clientes .testimonio .columna .puesto {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .fondo-figura {
+    background: none;
+    background-size: cover;
+    min-height: 0px;
+    position: absolute;
+    width: 100%;
+  }
+  #ebooks-home .columna {
+    text-align: center;
+    align-items: center;
+  }
+  #ebooks-home .mov-inversion {
+    flex-direction: column-reverse;
+  }
+  #ebooks-home .contenedor {
+    position: relative;
+  }
+  #ebooks-home h2 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.7em;
+  }
+  #ebooks-home h2 span {
+    font-family: 'Daydreamer';
+    font-size: 2.5em;
+    display: block;
+    padding-left: 0;
+  }
+  #ebooks-home .flex {
+    max-width: 800px;
+    margin-top: 50px;
+  }
+  #ebooks-home h3 {
+    text-align: center;
+    font-size: 2.2em;
+    line-height: 100%;
+    padding: 20px 0;
+  }
+  #ebooks-home p {
+    text-align: center;
+    font-weight: 500;
+  }
+  #ebooks-home .boton {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #suscribirme .flex {
+    min-height: 622px;
+    background: url(../img/home/res-recetario.jpg) center no-repeat;
+    background-size: cover;
+    align-items: center;
+  }
+  #suscribirme .flex .columna h2 {
+    color: #595959;
+    text-align: center;
+  }
+  #suscribirme .flex .columna p {
+    text-align: center;
+  }
+  #coaching-homemov {
+    padding-top: 60px;
+    background: url(../img/home/res-coachingBACK.jpg) no-repeat center;
+    min-height: 1400px;
+    background-size: cover;
+    color: #fff;
+    align-items: center;
+  }
+  #coaching-homemov h2 {
+    margin-bottom: 485px;
+    text-align: center;
+    color: #008c2f;
+    font-size: 2.7em;
+    font-weight: 700;
+  }
+  #coaching-homemov h2 span {
+    display: block;
+    font-size: 1em;
+  }
+  #coaching-homemov h2 b {
+    display: block;
+    font-family: 'Daydreamer';
+    font-size: 1.7em;
+  }
+  #coaching-homemov .flex {
+    min-height: 0px;
+  }
+  #coaching-homemov .flex .columna {
+    padding: 0;
+  }
+  #coaching-homemov .flex .columna:first-child {
+    background: #fff;
+    width: 100%;
+  }
+  #coaching-homemov .flex .columna:last-child {
+    background: #008c2f;
+    width: 100%;
+    padding: 20px;
+  }
+  #coaching-homemov p {
+    text-align: center;
+  }
+  #coaching-homemov p b {
+    font-weight: 400;
+  }
+  #coaching-homemov img {
+    position: relative;
+    left: 0px;
+    width: 0px;
+    top: 0px;
+  }
+  #coaching-homemov a.boton {
+    text-align: center;
+    float: none;
+    background-color: #008c2f !important;
+  }
+  #coaching-homemov .cursiva {
+    text-align: center;
+    font-family: 'Daydreamer';
+    font-size: 2.3em;
+    margin-top: 15px;
+  }
+  #coaching-homemov .center {
+    align-items: center;
+    text-align: center;
+  }
+  #entrenamiento-home {
+    background: none;
+  }
+  #entrenamiento-home .contenedor {
+    padding: 0;
+  }
+  #entrenamiento-home .w-box {
+    position: relative;
+    top: 592px;
+  }
+  #entrenamiento-home h2 {
+    opacity: 0.85;
+    margin: 0 5%;
+    background-color: white;
+    text-align: center;
+    color: #008c2f;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  #entrenamiento-home h2 span {
+    display: block;
+    font-size: 1.3em;
+  }
+  #entrenamiento-home h2 span.acondicionamiento {
+    font-size: 0.9em;
+  }
+  #entrenamiento-home h2 span.cursiva {
+    font-family: 'Daydreamer';
+    font-size: 1.5em;
+  }
+  #entrenamiento-home .info {
+    background: #fff;
+    position: relative;
+    width: auto;
+    padding: 35px;
+    text-align: center;
+  }
+  #entrenamiento-home .info p {
+    color: black;
+  }
+  #entrenamiento-home .info b {
+    font-weight: 500;
+    color: #008c2f;
+  }
+  #entrenamiento-home .info p.cursiva {
+    text-align: center;
+    color: #008c2f;
+    font-family: 'Daydreamer';
+    font-size: 2em;
+  }
+  #entrenamiento-home #back-clauss {
+    background: url(../img/home/res-clauss.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 800px;
+  }
 }
